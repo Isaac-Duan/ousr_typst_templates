@@ -34,12 +34,15 @@
   ]
 )
 
+// 添加一个靠左对齐的 “致书对象”
 #let tos(x) = [
     #set par(first-line-indent: 0em)
     #set text(font:"FangSong", size: 18pt)
     #x
 ]
 
+
+// 添加一个靠右居中对齐的“姓名，日期”的签名戳
 #let nametime(n,t) = [
   #set align(right)
   #block(above: 40pt, below: 120pt)[
