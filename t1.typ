@@ -1,6 +1,8 @@
 #set text(size:10pt, font: ("simsun"), lang: "zh")
 #set page("a4", flipped: true, columns: 2)
 
+// 设置heading的格式
+// 在每一个heading后添加一个不可见的段落(par)，这样正文的缩进可以保持2个字符
 #show heading: it => {
     if it.level == 1 {
         set align(center)
